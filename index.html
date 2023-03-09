@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spotify Web Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body{
+        font-family: 'Roboto', sans-serif !important;
+        margin-top: -65px;
+      }
+      .gradient{
+        background: linear-gradient(#ed6670,#f2ad4e);
+      }
+        .bg-yellow{
+            background-color:#f7c04e !important;
+        }
+        .py-6{
+            padding: 150px 0;
+        }
+        .pt-6{
+            padding: 200px 0;
+        }
+        .bg-soft-black{
+          background-color: #00000099;
+        }
+        .btn-success{
+          border-radius: 30px;
+          padding: 5px 50px;
+        }
+        .btn-outline-secondary{
+          border-radius: 30px;
+          padding: 5px 50px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-soft-black sticky-top">
+        <div class="container col-md-8" id="menu">
+          <div class="x"> 
+          <img src="images/spotify.png" alt="">
+          <a class="navbar-brand" href="#menu"
+            >Spotify</a>
+          </div>
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#">Premium</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#">Yardım</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#">İndir</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#">Kaydol</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#">Oturum Aç</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <section class="bg-yellow py-6 pt-6 gradient">
+        <div class="container">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+              <div class="carousel-item active " data-bs-interval="8000">
+              <h1 class="display-3">Herkes için müzik</h1>
+              <a href="#" class="btn btn-success">SPOTİFY'I ÜCRETSİZ OLARAK AL.</a>
+              <a href="#" class="btn btn-outline-secondary">SPOTİFY'I PREMİUM OLARAK AL.</a>
+              </div>
+              <div class="carousel-item " data-bs-interval="8000">
+                <h1 class="display-3">Tüm ailen için Premium. Sadece 39,99 TL</h1>
+                <a href="#" class="btn btn-success">DAHA FAZLA BİLGİ</a>
+              </div>
+              <div class="carousel-item" data-bs-interval="8000">
+                <h1 class="display-3">Öğrenciler %50 indirimli</h1>
+                <a href="#" class="btn btn-success">DAHA FAZLA BİLGİ</a>
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                    <h1 class="display-3">Spotify'ı Playstation ve Xbox One'da çal.</h1>
+                    <a href="#" class="btn btn-success">DAHA FAZLA BİLGİ</a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="media" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Spotify da neler var ?</h1>
+                    <h4>Müzik</h4>
+                    <p>Spotify'da milyonlarca şarkı var. En sevdiklerini dinle <br>yeni parçaları keşfet.</p>
+                    <h4>Çalma Listeleri</h4>
+                    <p>Müzik tutkunları ve uzmanlar tarafından hazırlanmış, ruh <br> haline uyacak hazır çalma listeleri bulacaksın.</p>
+                    <h4>Yeni çıkanlar</h4>
+                    <p>Bu hafta yeni çıkan single ve albümleri dinle, ilk 50'de <br> neler olduğunu keşfet.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="row g-0 text-center">
+                    <div class="col-6 col-md-12 col-lg-6">
+                        <img src="images/latrach-med-jamil-YZfbFTmM0W0-unsplash.jpg" width="305px" height="250px"  alt="">
+                    </div>
+                    <div id="resim" class="col-6 col-md-12 col-lg-6 ">
+                        <img src="images/mailchimp-4ct0iDMOjuc-unsplash.jpg" width="305px" height="250px" alt="">
+                    </div>
+                    <div class="col-6 col-md-12 col-lg-6">
+                        <img src="images/mailchimp-YTZOyio3Udk-unsplash.jpg" width="305px" height="250px" alt="">
+                    </div>
+                    <div id="resim" class="col-6 col-md-12 col-lg-6 d-md-none d-lg-block">
+                        <img src="images/vusala-abdullayeva-fOtiY7ocdZo-unsplash.jpg" width="305px" height="250px"alt="">
+                    </div>
+                </div>
+            </div>
+    </div>
+       
+    </section>
+
+      <section id="menu3" class="bg-yellow py-3 d-md-block gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 offset-md-3 py-2 ">
+                    <h6 class="text-center py-3">Senin için yapıldı.</h6>
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <img src="images/sing.jpg" width="100px" height="100px" alt="">
+                            <small class="text-danger">Sana özel günün derlemesi</small>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="images/song.jpg" width="100px" height="100px" alt="">
+                            <small class="text-danger">Yeni çıkanların radarı</small>
+                        </div>
+                        <ul class="list-unstyled py-2 text-success fw-bolder m-1">
+                            <li class="py-2">Listeler</li>
+                            <li class="py-2">Yeni Çıkanlar</li>
+                            <li class="py-2">Videolar</li>
+                            <li class="py-2">Podcastlar</li>
+                            <li class="py-2">Keşfet</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="col-md-5 offset-md-2 py-2">
+                    <h2>Kolaydır.</h2>
+                    <h4>Ara</h4>
+                    <p>Ne dinlemek istediğini biliyor musun? <br>Sadece ara ve çala dokun.</p>
+                    <h4>Gözat</h4>
+                    <p>En yeni listeleri yeni çıkarılan harika çalma <br> listelerini hemen keşfet.</p>
+                    <h4>Keşfet</h4>
+                    <p>Kişisel çalma listenle her Pazartesi yeni müziklerin <br>tadını çıkar. Ya da arkana yaslan ve radyo dinle.</p>
+                </div>
+                
+                
+            </div>
+        </div>
+      </section>
+
+      <section id="menu4" class="py-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="text-center float-lg-start">Bir hesap. Her yerde dinle.</h1>
+                    <ul class="list-inline py-3 fw-bolder text-center float-lg-start d-none d-sm-block">
+                        <li class="list-inline-item">MOBİL</li>
+                        <li class="list-inline-item">BİLGİSAYAR</li>
+                        <li class="list-inline-item">TABLET</li>
+                        <li class="list-inline-item">ARABA</li>
+                    </ul>
+                    <ul class="list-inline py-1 text-success fw-bolder text-center float-lg-start d-none d-sm-block">
+                        <li class="list-inline-item">HOPARLÖR</li>
+                        <li class="list-inline-item">PLAYSTATİON</li>
+                        <li class="list-inline-item">XBOX</li>
+                        <li class="list-inline-item">TV</li>
+                        <li class="list-inline-item">WEB ÇALAR</li>
+                    </ul>
+                    <div class="row  d-sm-none">
+                        <div class="col">
+                    <ul class="list-unstyled text-center">
+                        <li>MOBİL</li>
+                        <li>BİLGİSAYAR</li>
+                        <li>TABLET</li>
+                        <li>ARABA</li>
+                    </ul>
+                        </div>
+                        <div class="col">
+                    <ul class="list-unstyled text-center">
+                        <li>HOPARLÖR</li>
+                        <li>PLAYSTATİON</li>
+                        <li>XBOX</li>
+                        <li>TV</li>
+                        <li>WEB ÇALAR</li>
+                    </ul>
+                        </div>
+                </div>
+                </div>
+                <div class="col-md-4 offset-md-2 col-lg-6 offset-lg-0">
+                    <img src="images/devices-icon-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+      </section>
+
+  <section id="menu5" class="bg-yellow py-5 gradient">
+        <div class="container">
+        <div class="row">
+        <div class="col-md-4 offset-2">
+            <div class="card card1">
+            <div class="card-body">
+                <h4>Spotify Free</h3>
+                    <h2 style="margin-bottom: 62px;">0,00 TL / <small>ay</small></h2>
+                        <hr>
+                     <ul class="list-unstyled">
+                        <li class="text-muted">Reklamsız</li>
+                        <li class="text-muted">Sınırsız Atlama Hakkı</li>
+                        <li class="text-muted">Çevrimdışı Dinle</li>
+                        <li class="text-muted">istediğin parçayı çal</li>
+                        <li class="text-muted">Yüksek kaliteli ses</li>
+                        <br>
+                
+                                <hr class="mb-2">
+                                
+                    <button class="btn btn-success btn-lg">ÜCRETSİZ EDİN</button>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-4">
+             <div class="card">
+                 <div class="card-body">
+                    <h4>Spotify Premium</h3>
+                    <h2>19,99 TL / <small>ay</small></h2>
+                    <small>30 günlük ücretsiz deneme başlat* Aile ve öğrenci tekliflerimiz var.</small>
+                    <hr>
+                     <h6>Karışık Çal</h6>
+                <ul class="list-unstyled">
+                    <li class="text-muted">Reklamsız</li>
+                    <li class="text-muted">Sınırsız Atlama Hakkı</li>
+                    <li class="text-muted">Çevrimdışı Dinle</li>
+                    <li class="text-muted">istediğin parçayı çal</li>
+                    <li class="text-muted">Yüksek kaliteli ses</li>
+                </ul>
+                    <hr class="mb-2">
+                <button class="btn btn-success btn-lg">PREMİUM EDİN</button>
+                               
+            </div>
+        </div>
+    </div>
+</div>
+    <p class="text-center">Spotify 30 günlük ücretsiz deneme teklifi şart ve koşullar geçerlidir. Premium kullanıcılar bu tekliften yararlanabilir.</p>
+        </div>
+      </section>
+
+      <footer class="bg-dark py-5">
+        <div class="container text-white">
+          <div class="row">
+            <div class="col-md-2 s">
+              <img src="images/spotify.png" width="40px" height="40px" alt="">
+              <h3><b>Spotify</b></h3>
+            </div>
+
+            <div class="col-md-2">
+              <ul class="list-unstyled">
+                <li class="mb-3 text-success"><small><b>ŞİRKET</b></small></li>
+                <li>Hakkında</li>
+                <li>İşler</li>
+                <li>Basın </li>
+                <li>Haberler</li>
+              </ul>
+            </div> 
+              <div class="col-md-2">
+              <ul class="list-unstyled ">
+                <li class="text-success  mb-3"><small><b>TOPLULUKLAR</b></small></li>
+                <li>Sanatçılar İçin</li>
+                <li>Geliştiriciler</li>
+                <li>Markalar</li>
+                <li>Yatırımcılar</li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul class="list-unstyled ">
+                <li class="text-success mb-3"><small><b>YARARLI BAĞLANTILAR</b></small></li>
+                <li>Yardım</li>
+                <li>Hediye</li>
+                <li>Web Çalar</li>
+              </ul>
+            </div>
+            <div class="col-md-4 py-3 ">
+              <i class="fab fa-facebook fa-2x mx-2"></i>
+              <i class="fab fa-instagram fa-2x mx-2"></i>
+              <i class="fab fa-twitter fa-2x mx-2"></i>
+            </div>
+            <div class="clearfix">
+              <ul class="list-inline mt-5">
+                <li class="list-inline-item "><a class="text-white" href="#"><small>Yasal</small></a></li>
+                <li class="list-inline-item"><a class="text-white" href="#"><small>Gizlilik</small></a></li>
+                <li class="list-inline-item"><a class="text-white" href="#"><small>Cookies</small></a></li>
+                <li class="list-inline-item"><a class="text-white" href="#"><small>Reklamlar Hakkında</small></a></li>
+              </ul>
+              <p class="float-end text-end"><small>Türkiye <br> 2023 Spotify AB</small></p>
+            </div>
+            
+          </div>
+        </div>
+      </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
